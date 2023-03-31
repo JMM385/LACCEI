@@ -1,13 +1,11 @@
 name: bokeh-app
-channels:
-  - conda-forge
 dependencies:
-  - python=3.7
-  - numpy=1.24.2
-  - pandas=1.5.3
-  - bokeh=3.1.0
-  - scikit-learn=1.2.2
-  - pip
-  - pip:
-    - nbserverproxy==0.9.0
-    - jupyter-server-proxy=1.2.0
+- python=3.7
+- numpy=1.24.2
+- pandas=1.5.3
+- bokeh=3.1.0
+- scikit-learn=1.2.2
+- pip
+- pip:
+  - nbserverproxy==0.9.0
+  - jupyter-server-proxy=1.2.0
