@@ -6,5 +6,5 @@ dependencies:
 - scikit-learn=1.2.2
 - pip
 - pip:
-  - nbserverproxy==0.9.0
-  - jupyter-server-proxy==1.2.0
+  - nbserverproxy
+  - jupyter-server-proxy
