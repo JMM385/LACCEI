@@ -1,8 +1,8 @@
-# Enable nbserverproxy
-jupyter serverextension enable --sys-prefix nbserverproxy
+#!/bin/bash
 
-# Install the bokeh server extension so that Bokeh launches at startup
-cp .binder/bokehserverextension.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
+# Create and activate conda environment
+conda env create -f environment.yml
+conda activate myenv
 
-# Enable Bokeh extension
-jupyter serverextension enable --sys-prefix bokeh.server.extension
+# Launch Bokeh app
+bokeh serve --show main.py
