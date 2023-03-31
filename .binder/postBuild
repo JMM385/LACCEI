@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# Create and activate conda environment
-conda env create -f environment.yml
-conda activate myenv
-
-# Launch Bokeh app
-bokeh serve --show main.py
